@@ -198,6 +198,13 @@
     <entry file="file://$PROJECT_DIR$/network_basics.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/More Actions1 简述解释型和编译型编程语言    解释型语言    编写的程序不需要编译，执行时，专门有一个解释器能够将VB语言翻译成机器语言    这样解释型语言每执行一次就要翻译一次。        编译型语言    程序执.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/basic_knowledge_of_operating_system.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
