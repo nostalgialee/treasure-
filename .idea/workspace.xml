@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0fc8ea9-e461-433a-9d25-04807fd7fbb4" name="Default" comment="" />
+    <list default="true" id="f0fc8ea9-e461-433a-9d25-04807fd7fbb4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/More Actions1 简述解释型和编译型编程语言    解释型语言    编写的程序不需要编译，执行时，专门有一个解释器能够将VB语言翻译成机器语言    这样解释型语言每执行一次就要翻译一次。        编译型语言    程序执.md" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +86,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1092" />
     <option name="y" value="46" />
     <option name="width" value="978" />
@@ -141,7 +143,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1087" y="-853" width="878" height="1502" extended-state="7" />
+    <frame x="-1087" y="-853" width="878" height="1502" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
