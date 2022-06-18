@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0fc8ea9-e461-433a-9d25-04807fd7fbb4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/code_practice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics.py" afterDir="false" />
     </list>
@@ -15,24 +14,24 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/python_interview$python_basics.coverage" NAME="python_basics Coverage Results" MODIFIED="1655474420137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_interview$code_practice.coverage" NAME="code_practice Coverage Results" MODIFIED="1655555406047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_interview$code_practice.coverage" NAME="code_practice Coverage Results" MODIFIED="1655563302027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="code_practice.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="code_practice.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code_practice.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="280" lean-forward="true" selection-start-line="280" selection-end-line="280" />
+            <state relative-caret-position="689">
+              <caret line="468" selection-start-line="468" selection-end-line="468" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="python_basics.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="python_basics.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_basics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="815">
-              <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+            <state relative-caret-position="640">
+              <caret line="197" column="3" selection-start-line="197" selection-start-column="3" selection-end-line="197" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -55,8 +54,8 @@
         <option value="$PROJECT_DIR$/django_basics.py" />
         <option value="$PROJECT_DIR$/network_basics.py" />
         <option value="$PROJECT_DIR$/basic_knowledge_of_operating_system.py" />
-        <option value="$PROJECT_DIR$/python_basics.py" />
         <option value="$PROJECT_DIR$/code_practice.py" />
+        <option value="$PROJECT_DIR$/python_basics.py" />
       </list>
     </option>
   </component>
@@ -70,8 +69,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-1092" />
-    <option name="y" value="46" />
+    <option name="x" value="-1058" />
+    <option name="y" value="-448" />
     <option name="width" value="978" />
     <option name="height" value="1015" />
   </component>
@@ -95,6 +94,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/learning_document/python_interview/code_practice.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -293,17 +293,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python_basics.py">
+    <entry file="file://$PROJECT_DIR$/code_practice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+        <state relative-caret-position="689">
+          <caret line="468" selection-start-line="468" selection-end-line="468" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code_practice.py">
+    <entry file="file://$PROJECT_DIR$/python_basics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="280" lean-forward="true" selection-start-line="280" selection-end-line="280" />
+        <state relative-caret-position="640">
+          <caret line="197" column="3" selection-start-line="197" selection-start-column="3" selection-end-line="197" selection-end-column="3" />
         </state>
       </provider>
     </entry>
