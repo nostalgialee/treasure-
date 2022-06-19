@@ -29,7 +29,7 @@ lis = random.sample(range(100), 10)
 lis1=['This','is','a','Man','B','!']
 # lis1 = sorted(lis1, key=lambda x:x.lower())
 lis1 = sorted(lis1, key= str.lower)
-print(lis1)
+
 
 
 """
@@ -67,12 +67,14 @@ a = mydict.setdefault(onekey, [])
 """
 
 
+
+
 """
 7.列表中保留顺序和不保留顺序去重
 
 """
 # 不保留顺序
-lis1=[3, 1, 4, 2, 3]
+# lis1=[3, 1, 4, 2, 3]
 # print(list(set(lis1)))
 
 # 保留顺序
@@ -82,8 +84,11 @@ T = []
 
 
 
+
+
+
 """
-8.实现99乘法表（使用两种方法
+8.实现99乘法表（使用两种方法）
 
 for i in range(1,10):
     for j in range(1,i+1):
@@ -93,10 +98,15 @@ for i in range(1,10):
 """
 
 
+
+
 """
 9.判断dict中有没有某个key
 res = False if key in dict1.keys() else True
 """
+
+
+
 
 
 """
@@ -111,6 +121,7 @@ b = list(zip(('a','b','c','d','e'),(1,2,3,4,5)))
 # print(b) # [('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', 5)]
 
 
+
 """
 11.将列表
 alist=[{'name':'a','age':25},
@@ -118,12 +129,13 @@ alist=[{'name':'a','age':25},
 {'name':'c','age':20}]，
 按照age的值从大到小排列
 
-
-
 alist = sorted(alist, key=lambda x:x['age'], reverse=True)
 print(alist)
 reverse = True # 降序
 """
+
+
+
 
 
 """
@@ -134,8 +146,12 @@ with open('etl_log.txt', 'r', encoding='utf-8') as f:
     for line in f.readlines():
         print(line)
 
-
 """
+
+
+
+
+
 
 
 """
@@ -152,11 +168,18 @@ res = dict(zip(tuple1, tuple2))
 # print(res)
 
 
+
+
+
+
 """
 14.1<(2==2)和1<2==2的结果分别是什么？
 ???
 
 """
+
+
+
 
 """
 15.如何打乱一个排好序的列表
@@ -165,6 +188,9 @@ import random
 lis = [1,2,3,6,7]
 random.shuffle(lis)
 """
+
+
+
 
 
 """
@@ -177,6 +203,11 @@ for i in sorted(set(a1)):
     aa = aa+i+str(a1.count(i))
 
 """
+
+
+
+
+
 
 
 """
@@ -201,12 +232,21 @@ def get_wanshu():
 
 
 
+
+
+
+
+
+
 """
 18.输入一个字符串，输出该字符串的字符的所有组合。
 如输入'abc',输出a,b,c,ab,ac,bc,abc.
 
 (不会)
 """
+
+
+
 
 
 
@@ -238,6 +278,8 @@ def _match(s):
 
 
 
+
+
 """
 20.使用生成器编写一个函数实现生成指定个数的斐波那契数列
 
@@ -259,16 +301,51 @@ def fibonacci(n):
 21.一行代码通过filter和lambda函数输出
 alist=[1,22,2,33,23,32]中索引为奇数的值
 
-"""
+
 alist = [1,22,2,33,23,32]
 alist = list(i[1] for i in ( filter(lambda x:x[0] % 2 == 1, enumerate(alist))))
+
+"""
+
+
 
 
 
 """
 22.编写一个函数实现十进制转62进制，分别用0-9A-Za-z,表示62位字母
 
+
+import string
+print(string.ascii_lowercase) # 小写字母
+print(string.ascii_uppercase) # 大写字母
+print(string.digits) # 0-9
+
+s=string.digits+string.ascii_uppercase+string.ascii_lowercase
+print(s)
+#
+
+
+def _10to62(num):
+    ss = ''
+    while True:
+        # 每一位的数字转化
+        ss = s[num%62] + ss
+        print("s[num%62]", s[num%62])
+        if num // 62 == 0:
+            # break
+            return ss
+        num = num // 62 # 得到几个轮回
+        # 假如 整除结果小于62, 循环终止
+        # 假如 整除结果大于62，需要继续整除 62,得到有几轮，
+        # 但是轮回也需要用62进制表示，直至 整除至 num == 0
+
+print(_10to62(666))
+
+
 """
+
+
+
 
 
 
@@ -348,11 +425,42 @@ add(1, 2)
 """
 
 
+
+
 """
 25.请编写一个函数将ip地址转换成一个整数。
 如10.3.9.12转换成00001010 00000011 00001001 00001100，然后转换成整数
 
+
+def _ip2int(ip):
+    lst = ip.split('.')
+    print(lst)
+    to_bin = []
+    for i in lst:
+        # Python zfill() 方法返回指定长度的字符串，原字符串右对齐，前面填充0。
+        to_bin.append(bin(int(i))[2:].zfill(8))
+
+
+        print(to_bin)
+        print(int(''.join(to_bin), 2))
+
+    return int(''.join(to_bin), 2) # 
+
+# class int(x, base=10)
+    # 参数
+    # x -- 字符串或数字。
+    # base -- 进制数，默认十进制。
+    # base 是 前面 x 的进制
+
+
+print(_ip2int("10.3.9.12"))
+
+
 """
+
+
+
+
 
 
 
@@ -360,9 +468,34 @@ add(1, 2)
 26.求以下代码结果
 def num():
     return [lambda x:i*x for i in range(4)]
+    
+    [0*x, 1*x, 2*x, 3*x]
+    
 print([m(2) for m in num()])
 
+[0, 2, 4, 6]
+
+
+
+
+其实相当于如下的代码
+def num():
+    sub = []
+    for i in range(4):
+        def num2(x):
+            return x * i
+        sub.append(num2)
+    return sub
+
+print([m(2) for m in num()])  
+
+
+[6, 6, 6, 6]
+
 """
+
+
+
 
 
 
@@ -372,20 +505,49 @@ collapse=True
 processFunc=collapse and (lambda s:' '.join(s.split())) or (lambda s:s)
 print(processFunc('i\tam\ntest\tproject!'))
 
+
+# True and 'i am test project!' or 'i   am  test    project!'
+先看 or 两边, ===> 'i am test project!' or 'i   am  test    project!'
+得到：
+'i am test project!' 
+
+
+
+
 collapse=False
 processFunc=collapse and (lambda s:' '.join(s.split())) or (lambda s:s)
 print(processFunc('i\tam\ntest\tproject!'))
 
+# False and 'i am test project!' or 'i   am  test    project!'
+
+先看 or 两边，
+False or 'i   am  test    project!'
+得到：
+'i   am  test    project!'
+
 """
+
+
+
+
 
 
 """
 28.
 编写一个函数，找出数组中没有重复的值的和
 
+def func2(lis):
+    return sum([i for i in set(lis) if lis.count(i) == 1])
 
+print(111, func2([3, 4, 1, 2, 5, 6, 6, 5, 4, 3, 3]))
 
 """
+
+
+
+
+
+
 
 
 """
@@ -393,19 +555,30 @@ print(processFunc('i\tam\ntest\tproject!'))
 
 a=1
 def bar():
-    a+=3
+    # a+=3
     
 bar()
 print(a)
 
+报错
 
 """
+
+
+
+
 
 
 """
 30.写一个函数，计算出以下字母所代表的数字，每个字母值不一样
+题没看明白
 
 """
+
+
+
+
+
 
 
 """
@@ -424,13 +597,46 @@ def decorator_b(func):
         return func(*args, **kwargs)
     return inner_b
     
+
 @decorator_b #f=decorator_b(f)
 @decorator_a #f=decorator_a(f)
 def f(x):
     print('Get in f')
     return x * 2
-f(1)
+
+
+被装饰函数定义阶段：
+    例子中：
+    先走 a 
+    后走 b
+decorator_b(decorator_a(f))
+
+decorator_a(f) 作为被装饰函数 放入 decorator_b 中
+内部 inner 中的伪代码
+    def inner_b(*args, **kwargs):
+        print('Get in inner_b')
+        return decorator_a(f)
+
+被装饰函数执行阶段：
+    例子中 
+    先走 b
+    后走 a
+
+打印结果：
+
+'Get in decorator_a'
+'Get in decorator_b'
+'Get in inner_b'
+'Get in inner_a'
+'Get in f'
+
+
 """
+
+
+
+
+
 
 
 
@@ -440,6 +646,7 @@ f(1)
 def test():
     try:
         raise ValueError('something wrong')
+        # 抛出异常直接到下面异步
     except ValueError as e:
         print('error occured')
         return
@@ -447,7 +654,17 @@ def test():
         print('ok')
 test()
 
+结果：
+
+error occured
+ok
+
+
 """
+
+
+
+
 
 
 """
@@ -461,17 +678,85 @@ func(mydict)
 mydict['c']=2
 print(mydict)
 
+
+>>> {'a':0,'b':2, 'c':2}
+
+
 """
+
+
+
+
 
 
 """
 34.写个函数接收一个文件夹名称作为参数，
-显示文件夹中文件的路径，以及其中包含的文件夹中文件的如今
+显示文件夹中文件的路径，以及其中包含的文件夹中文件的路径
 
+import os
 
+def _path(dirname):
+    lis_dir = os.walk(dirname)
+
+    for root, dirs, files in lis_dir:
+    
+        for d in dirs:
+            print(os.path.join(root, d))
+        for f in files:
+            print(os.path.join(root, f))
+            
+            
 """
+
+
+
+
 
 
 """
 35.输入某年某月某日，判断这是这一年的第几天
+
+先不做了
 """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ps: 不会的东西总结：
+    # 迭代器生成器装饰器
+    # 并发编程相关
+    # 网络编程
+    # 数据库
