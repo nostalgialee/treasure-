@@ -282,19 +282,18 @@ def _match(s):
 
 """
 20.使用生成器编写一个函数实现生成指定个数的斐波那契数列
-
-不太会
 """
 
 def fibonacci(n):
-
-    t, a, b = 0, 0, 2
-
+    t, a, b = 0, 0, 1
+    # 使用生成器节约空间
     while t < n:
-        pass
+        yield b
+        a, b = b, a + b
+        t += 1
 
-
-
+# for i in fibonacci(23):
+#     print(i)
 
 
 """
@@ -721,6 +720,182 @@ def _path(dirname):
 
 
 
+"""
+36.写一个的支持with语句的类
+
+类中必须实现 __enter__ / __exit__ 方法，才能支持
+with语句
+
+class Wclass:
+    
+    def __enter__(self):
+        pass
+        
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        # 发生错误也要进行的操作
+        pass
+"""
+
+
+
+
+
+"""
+37.实现一个单例模式。(尽可能多的方法)
+class MetaClass(type):
+
+    def __new__(cls, *args, **kwargs):
+        obj = super().__new__(cls, *args, **kwargs)
+        return obj
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._instance = None
+
+    def __call__(self, *args, **kwargs):
+        if  self._instance:
+            return self._instance
+        self._instance = self.__new__(self)
+        self.__init__(self._instance,  *args, **kwargs)
+        return self._instance
+
+
+import threading
+
+class SingletonType(type):
+    _instance_lock = threading.Lock()
+
+    def __call__(cls, *args, **kwargs):
+        if not hasattr(cls, "_instance"):
+            with SingletonType._instance_lock:
+                if not hasattr(cls, "_instance"):
+                    cls._instance = super().__call__(*args, **kwargs)
+        return cls._instance
+
+
+
+class Singleton(metaclass=MetaClass):
+
+    def __init__(self):
+        pass
+
+
+s1 = Singleton()
+s2 = Singleton()
+print(s1)
+print(s2)
+"""
+
+
+
+"""
+38.手写一个栈
+#给一个点，我们能够根据这个点知道一些内容
+
+class Node:
+
+    def __init__(self,val): #定位的点的值和一个指向
+        self.val=val #指向元素的值,原队列第二元素
+        self.next=None #指向的指针
+
+
+class Stack:
+
+    def __init__(self):
+        self.top = None # 头节点
+
+    def push(self, val):
+        node = Node(val)
+        if not self.top:
+            self.top = node
+        else:
+            node.next = self.top
+            self.top = node
+
+    def pop(self):
+        if not self.top:
+            return None
+        else:
+            tmp = self.top.val
+            self.top = self.top.next
+            return tmp
+            
+"""
+
+
+
+
+
+
+
+
+
+"""
+39.使用两个队列实现一个栈
+class Stack:
+
+    def __init__(self):
+        self.q1 = []
+        self.q2 = []
+
+    def push(self, node):
+        self.q1.append(node)
+
+    def pop(self):
+        if not self.q1:
+            # 删完了
+            return None
+        while len(self.q1) > 1:
+            node = self.q1.pop(0)
+            self.q2.append(node)
+        pop_node = self.q1.pop(0)
+        self.q1, self.q2 = self.q2, self.q1
+        return pop_node
+
+
+st=Stack()
+print(st.pop())
+st.push(1)
+print(st.pop())
+st.push(1)
+st.push(1)
+st.push(1)
+print(st.pop())
+print(st.pop())
+print(st.pop())
+
+"""
+
+
+
+
+
+
+
+
+"""
+40.有如下链表类，请实现单链表逆置。
+class ListNode:
+
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+
+
+class Solution:
+
+    def reverseList(self, pHead):
+        if not pHead or not pHead.next:
+            return pHead
+        last = None
+        while pHead:
+            tmp = pHead.next
+            pHead.next = last
+            last = pHead
+            pHead = tmp
+        return last
+
+"""
 
 
 
@@ -731,6 +906,45 @@ def _path(dirname):
 
 
 
+
+"""
+41.手写一个队列
+环形队列
+
+# 不太熟练
+
+class Queue:
+
+    def __init__(self, size):
+        self.size = size
+        self.queue = [0 for i in range(self.size)]
+        self.front = 0
+        self.rear = 0
+
+    def push(self, val):
+        if self.is_full():
+            raise IndexError('queue is fulled')
+        else:
+            self.rear = (self.rear + 1) % self.size
+            self.queue[self.rear] = val
+
+
+
+    def pop(self):
+        if self.is_empty():
+            raise IndexError('Queue is empty.')
+        self.front = (self.front + 1) % self.size
+        return self.queue[self.front]
+
+
+    def is_empty(self):
+        return self.front == self.rear
+
+    def is_full(self):
+        return (self.rear + 1) % self.size == self.front
+
+
+"""
 
 
 
@@ -756,7 +970,17 @@ def _path(dirname):
 
 
 #ps: 不会的东西总结：
-    # 迭代器生成器装饰器
+    # 迭代器生成器 (✔)
+
+    # 装饰器 (✔)
+
+    # 元类（知识点）(对)
+    # meta
+
     # 并发编程相关
+
     # 网络编程
+
     # 数据库
+        # 主要是 索引相关
+
