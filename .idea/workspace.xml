@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0fc8ea9-e461-433a-9d25-04807fd7fbb4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/practice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_knowledge_of_operating_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic_knowledge_of_operating_system.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/code_practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_knowledge.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_knowledge.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/network_basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/network_basics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,18 +18,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/python_interview$basic_knowledge_of_operating_system.coverage" NAME="basic_knowledge_of_operating_system Coverage Results" MODIFIED="1656339967065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_interview$python_basics.coverage" NAME="python_basics Coverage Results" MODIFIED="1655902512180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_interview$derectors.coverage" NAME="derectors Coverage Results" MODIFIED="1655630792699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../python_knowledge" />
-    <SUITE FILE_PATH="coverage/python_interview$practice.coverage" NAME="practice Coverage Results" MODIFIED="1655899058503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_interview$code_practice.coverage" NAME="code_practice Coverage Results" MODIFIED="1655988398236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_interview$practice.coverage" NAME="practice Coverage Results" MODIFIED="1656342081285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_interview$code_practice.coverage" NAME="code_practice Coverage Results" MODIFIED="1661432617936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="code_practice.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code_practice.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="918" column="24" lean-forward="true" selection-start-line="918" selection-start-column="24" selection-end-line="918" selection-end-column="24" />
+            <state relative-caret-position="435">
+              <caret line="1045" column="10" lean-forward="true" selection-start-line="1045" selection-start-column="10" selection-end-line="1045" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql_knowledge.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql_knowledge.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="280" column="14" lean-forward="true" selection-start-line="280" selection-start-column="14" selection-end-line="280" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -35,8 +47,17 @@
       <file leaf-file-name="python_basics.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python_basics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="767" column="13" selection-start-line="767" selection-start-column="3" selection-end-line="767" selection-end-column="13" />
+            <state relative-caret-position="242">
+              <caret line="885" selection-start-line="885" selection-end-line="885" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basic_knowledge_of_operating_system.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basic_knowledge_of_operating_system.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -44,26 +65,8 @@
       <file leaf-file-name="network_basics.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/network_basics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1730">
-              <caret line="124" column="22" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="basic_knowledge_of_operating_system.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic_knowledge_of_operating_system.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="practice.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/practice.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="308">
+              <caret line="78" column="12" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -81,6 +84,20 @@
     <findStrings>
       <find>斐波</find>
       <find>写个函数接收一个文件夹名称作为参数写个函数接收一个文件夹名称作为参数</find>
+      <find>GIL</find>
+      <find>什么是asyncio</find>
+      <find />
+      <find>close</find>
+      <find>哪些</find>
+      <find>慢查询</find>
+      <find>on将数据库的student</find>
+      <find>实例方法、静态方法和类方法的区别</find>
+      <find>实现一个单例模式。(尽可能多的方法)</find>
+      <find>如何判断一个对象是否可调用？</find>
+      <find>如何判断一个对象是否可调用？哪些对象是可调用对象？如何定义一个类，使其对象本身就是可调用对象？</find>
+      <find>类的加载和实例化过程</find>
+      <find>DNS域名解析过程</find>
+      <find>有如下链表类，请实现单链表逆置</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,12 +107,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/django_basics.py" />
-        <option value="$PROJECT_DIR$/basic_knowledge_of_operating_system.py" />
         <option value="$PROJECT_DIR$/../python_knowledge/derectors.py" />
-        <option value="$PROJECT_DIR$/network_basics.py" />
-        <option value="$PROJECT_DIR$/python_basics.py" />
-        <option value="$PROJECT_DIR$/code_practice.py" />
         <option value="$PROJECT_DIR$/practice.py" />
+        <option value="$PROJECT_DIR$/code_practice.py" />
+        <option value="$PROJECT_DIR$/python_basics.py" />
+        <option value="$PROJECT_DIR$/basic_knowledge_of_operating_system.py" />
+        <option value="$PROJECT_DIR$/network_basics.py" />
+        <option value="$PROJECT_DIR$/mysql_knowledge.py" />
       </list>
     </option>
   </component>
@@ -108,18 +126,16 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1089" />
-    <option name="y" value="-855" />
-    <option name="width" value="1098" />
-    <option name="height" value="1878" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-3" />
+    <option name="width" value="1415" />
+    <option name="height" value="1018" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,6 +147,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -154,6 +171,25 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.code_practice">
+    <configuration name="basic_knowledge_of_operating_system" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_interview" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/basic_knowledge_of_operating_system.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="code_practice" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_interview" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -235,12 +271,14 @@
       <item itemvalue="Python.python_basics" />
       <item itemvalue="Python.derectors" />
       <item itemvalue="Python.practice" />
+      <item itemvalue="Python.basic_knowledge_of_operating_system" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.code_practice" />
-        <item itemvalue="Python.python_basics" />
         <item itemvalue="Python.practice" />
+        <item itemvalue="Python.basic_knowledge_of_operating_system" />
+        <item itemvalue="Python.python_basics" />
         <item itemvalue="Python.derectors" />
       </list>
     </recent_temporary>
@@ -259,17 +297,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1087" y="-853" width="878" height="1502" extended-state="6" />
+    <frame x="-2" y="0" width="1132" height="814" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26373628" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21565731" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23536585" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17597765" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -292,6 +330,90 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/basic_knowledge_of_operating_system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10400">
+          <caret line="416" lean-forward="true" selection-start-line="416" selection-end-line="416" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql_knowledge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code_practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22950">
+          <caret line="918" column="24" selection-start-line="918" selection-start-column="24" selection-end-line="918" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_basics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19175">
+          <caret line="767" column="13" selection-start-line="767" selection-start-column="3" selection-end-line="767" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network_basics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_knowledge_of_operating_system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6650">
+          <caret line="266" lean-forward="true" selection-start-line="266" selection-end-line="266" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code_practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22950">
+          <caret line="918" column="24" lean-forward="true" selection-start-line="918" selection-start-column="24" selection-end-line="918" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_basics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19175">
+          <caret line="767" column="13" selection-start-line="767" selection-start-column="3" selection-end-line="767" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network_basics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_knowledge_of_operating_system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2825">
+          <caret line="113" selection-start-line="113" selection-end-line="119" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code_practice.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18225">
@@ -352,13 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_basics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/python/app/Lib/typing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -383,45 +498,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic_knowledge_of_operating_system.py">
+    <entry file="file://D:/python/app/Lib/multiprocessing/process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        <state relative-caret-position="221">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network_basics.py">
+    <entry file="file://$PROJECT_DIR$/../设计模式/创建型设计模式/生成器（建造者模式）模式.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../设计模式/创建型设计模式/工厂方法.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../设计模式/创建型设计模式/生成器(建造者模式).py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../设计模式/行为型设计模式/观察者模式.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../设计模式/迪米特原则.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../设计模式/依赖倒置原则.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../设计模式/组合模式.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1730">
-          <caret line="124" column="22" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
+        <state relative-caret-position="-611" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../设计模式/里氏替换原则.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../设计模式/接口隔离原则.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../设计模式/合成复用原则.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../设计模式/单一职责原则.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../程序/main.py" />
+    <entry file="file://$PROJECT_DIR$/../程序/cfar.py" />
+    <entry file="file://$PROJECT_DIR$/../程序/sar.py" />
+    <entry file="file://D:/python/app/Lib/site-packages/pymysql/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="399" lean-forward="true" selection-start-line="399" selection-end-line="399" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-866309272/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="344" column="59" selection-start-line="344" selection-start-column="59" selection-end-line="344" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python_basics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="767" column="13" selection-start-line="767" selection-start-column="3" selection-end-line="767" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code_practice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="918" column="24" lean-forward="true" selection-start-line="918" selection-start-column="24" selection-end-line="918" selection-end-column="24" />
+        <state relative-caret-position="252">
+          <caret line="5497" lean-forward="true" selection-start-line="5497" selection-end-line="5497" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="275">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSI网络模型.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_basics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network_basics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="78" column="12" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql_knowledge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="280" column="14" lean-forward="true" selection-start-line="280" selection-start-column="14" selection-end-line="280" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_basics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="885" selection-start-line="885" selection-end-line="885" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code_practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="1045" column="10" lean-forward="true" selection-start-line="1045" selection-start-column="10" selection-end-line="1045" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_knowledge_of_operating_system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
         </state>
       </provider>
     </entry>

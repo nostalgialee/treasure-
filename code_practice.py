@@ -784,7 +784,47 @@ s1 = Singleton()
 s2 = Singleton()
 print(s1)
 print(s2)
+
 """
+
+class SingleObjectType(type):
+
+    def __new__(cls, *args, **kwargs):
+        cls_obj = super().__new__(cls, *args, **kwargs)
+        return cls_obj
+
+    def __init__(self, *args, **kwargs):
+        self.__instance = None
+        super().__init__(*args, **kwargs)
+
+    def __call__(self, *args, **kwargs):
+        if self.__instance:
+            return self.__instance
+        self.__instance = self.__new__(self)
+        self.__instance.__init__(*args, **kwargs)
+        return self.__instance
+
+
+class A(metaclass=SingleObjectType):
+
+    a = 1
+
+    def __init__(self):
+        pass
+
+# a1 = A()
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -792,6 +832,7 @@ print(s2)
 38.手写一个栈
 #给一个点，我们能够根据这个点知道一些内容
 
+"""
 class Node:
 
     def __init__(self,val): #定位的点的值和一个指向
@@ -802,10 +843,10 @@ class Node:
 class Stack:
 
     def __init__(self):
-        self.top = None # 头节点
+        self.top = None
 
-    def push(self, val):
-        node = Node(val)
+    def push(self, item):
+        node = Node(item)
         if not self.top:
             self.top = node
         else:
@@ -815,17 +856,9 @@ class Stack:
     def pop(self):
         if not self.top:
             return None
-        else:
-            tmp = self.top.val
-            self.top = self.top.next
-            return tmp
-            
-"""
-
-
-
-
-
+        pop_item = self.top
+        self.top = self.top.next
+        return pop_item.val
 
 
 
@@ -866,6 +899,63 @@ print(st.pop())
 
 """
 
+class Stack1:
+    # 先进后出
+    def __init__(self):
+        self.queueA = [] # 队列
+        self.queueB = []
+
+    def push(self, item):
+        self.queueA.append(item)
+
+    def pop(self):
+        if not self.queueA:
+            return None
+        while len(self.queueA) != 1:
+            item = self.queueA.pop(0)
+            self.queueB.append(item)
+        pop_item = self.queueA.pop(0)
+
+        while self.queueB:
+            item = self.queueB.pop(0)
+            self.queueA.append(item)
+        return pop_item
+
+
+
+# st=Stack()
+# print(st.pop())
+# st.push(1)
+# print(st.pop())
+# st.push(1)
+# st.push(2)
+# st.push(3)
+# print(st.pop())
+# print(st.pop())
+# print(st.pop())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -874,36 +964,31 @@ print(st.pop())
 
 
 """
+*****************************************************
 40.有如下链表类，请实现单链表逆置。
+*****************************************************
+"""
 class ListNode:
-
-    def __init__(self, val):
-        self.val = val
-        self.next = None
-
+    def __init__(self,val):
+        self.val=val
+        self.next=None
 
 class Solution:
 
+    # pHead ---> p1 ---> p2 ---> p3 ---> p4
+    #            tmp
     def reverseList(self, pHead):
-        if not pHead or not pHead.next:
+        if not pHead or pHead.next:
             return pHead
         last = None
         while pHead:
+            # TODO: 这个不太熟练
+            pass
             tmp = pHead.next
             pHead.next = last
             last = pHead
             pHead = tmp
         return last
-
-"""
-
-
-
-
-
-
-
-
 
 
 
@@ -911,51 +996,34 @@ class Solution:
 41.手写一个队列
 环形队列
 
-# 不太熟练
-
+"""
 class Queue:
 
     def __init__(self, size):
+        self.q = [0 for i in range(size)]
         self.size = size
-        self.queue = [0 for i in range(self.size)]
         self.front = 0
-        self.rear = 0
+        self.near = 0
 
-    def push(self, val):
+    def push(self, item):
         if self.is_full():
-            raise IndexError('queue is fulled')
-        else:
-            self.rear = (self.rear + 1) % self.size
-            self.queue[self.rear] = val
-
-
+            raise IndexError('queue is full')
+        self.near = (self.near + 1) % self.size
+        self.q[self.near] = item
 
     def pop(self):
         if self.is_empty():
-            raise IndexError('Queue is empty.')
+            raise IndexError('queue is empty')
+        item = self.queue[self.front]
         self.front = (self.front + 1) % self.size
-        return self.queue[self.front]
+        return item
 
-
-    def is_empty(self):
-        return self.front == self.rear
 
     def is_full(self):
-        return (self.rear + 1) % self.size == self.front
+        return (self.near + 1) % self.size == self.front
 
-
-"""
-
-
-
-
-
-
-
-
-
-
-
+    def is_empty(self):
+        return self.front == self.near
 
 
 
@@ -977,7 +1045,8 @@ class Queue:
     # 元类（知识点）(对)
     # meta
 
-    # 并发编程相关
+    # 并发编程相关 (基本✔)
+
 
     # 网络编程
 
